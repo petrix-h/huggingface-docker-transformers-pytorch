@@ -9,9 +9,13 @@ TODO make better playground...
 
 ```docker-compose run huggingface-docker bash```
 
+To edit the test: 
+
 ```nano test.py```
 
  -- Copy paste the contents from test.py --  Ctrl + x y
+
+To run the test: 
 
 ```python3 test.py```
 
