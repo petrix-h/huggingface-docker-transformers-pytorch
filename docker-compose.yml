@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  huggingface-docker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: huggingface-docker
+    restart: unless-stopped
+   # ports:
+   #   - "4891:4891"
+   #   - "8088:80"
+#    environment:
+   #   - inference_mode=cpu
+    volumes:
+      - './models:/models'
+    # run a terminal... TODO ssh.. 
+    command: ["/bin/bash"]
