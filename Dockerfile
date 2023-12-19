@@ -9,6 +9,8 @@ RUN pip install 'transformers[torch]'
 #Required by Phi-2
 RUN pip install einops
 
+COPY ./test.py /test.py
+
 #TODO add ssh and expose a port... 
 #In the meantime playground with: 
 # docker-compose build huggingface-docker
