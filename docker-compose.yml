@@ -12,7 +12,7 @@ services:
    #   - "8088:80"
 #    environment:
    #   - inference_mode=cpu
-    volumes:
-      - './models:/models'
+#    volumes:
+#      - './models:/models'
     # run a terminal... TODO ssh.. 
     command: ["/bin/bash"]
